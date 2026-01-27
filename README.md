@@ -11,18 +11,18 @@ A repository for simulation-based control systems projects. The focus is on impl
 ### 1. Second-Order System Simulation (Completed)
 Modeled a standard mass-spring-damper system to analyze the effect of the damping ratio ($\zeta$) on stability and rise time.
 
-* **Source:** `src/second_order_sim.py`
+* **Source:** 'src/secondodsim.py'
 * **Results:** Verified that $\zeta = 1.0$ (Critical Damping) provides the optimal balance between speed and stability, while $\zeta < 1.0$ introduces oscillation.
-* **Plot:** See `results/damping_comparison.png` for the step response analysis.
+* **Plot:** See [link1](https://github.com/slimyshi/controls-and-robotics-foundations/blob/main/results/Figure_1.png') and  [link2](https://github.com/slimyshi/controls-and-robotics-foundations/blob/main/results/Figure_2.png) for the step response analysis respectively.
 
 ### 2. PID Control (In Development)
-Implementation of a manual PID class to close the feedback loop and minimize steady-state error.
+Implemented closed loop feedback in a frictionless system.
 
 ---
 
 ## Usage
 
 **1. Clone the repository**
-```bash
+bash
 
 git clone [https://github.com/slimyshi/controls-and-robotics-foundations.git](https://github.com/slimyshi/controls-and-robotics-foundations.git)
