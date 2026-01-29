@@ -25,4 +25,4 @@ Implemented closed loop feedback in a frictionless system.
 **1. Clone the repository**
 bash
 
-git clone [https://github.com/slimyshi/controls-and-robotics-foundations.git](https://github.com/slimyshi/controls-and-robotics-foundations.git)
+git (clone)[https://github.com/slimyshi/controls-and-robotics-foundations.git](https://github.com/slimyshi/controls-and-robotics-foundations.git)
