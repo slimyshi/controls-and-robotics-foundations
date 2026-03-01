@@ -16,7 +16,7 @@ B =  np.array([
     [0],
     [1/m]
 ])
-
+#the h matrix is for 
 H = np.array([[1,0]]) #because our ultrasonic sensor only measures position, not velocity
 
 Q = np.diag([0.1,0.1]) #for processing noise 
@@ -32,7 +32,7 @@ true_pos = 10 + 5*(np.sin(time))
 noisy_sensor = true_pos +np.random.normal(0, 5.0, len(time))
 
 
-P= np.identity(2)
+P= np.identity(2) #uncertainity 
 
 x_state = np.array(
     [[0],
@@ -57,7 +57,7 @@ for i ,t in enumerate(time):
    
     z=np.array([[noisy_sensor[i]]])
 
-    k= p_pred@(np.transpose(H))@(np.linalg.inv(H@p_pred@(np.transpose(H)) +R))
+    k= P@(np.transpose(H))@(np.linalg.inv(H@p_pred@(np.transpose(H)) +R))
     xf = x_pred + k@(z- H@x_pred)
     pf = (np.eye(2) - k @ H) @ p_pred
 

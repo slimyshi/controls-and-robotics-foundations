@@ -1,6 +1,5 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import control as ct
 
 m = 1.0
 mp = 0.1
