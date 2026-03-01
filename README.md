@@ -41,7 +41,12 @@ Implemented Linear Quadratic Regulator (LQR) control to automate gain calculatio
 * **Results:** * [View 1D Drone LQR Stability]()
     * [View Inverted Pendulum (Cart-Pole) Balance](https://github.com/satvikvyas/controls-and-robotics-foundations/blob/main/results/Cartpole.png)
 
----
+### 6. Linear Quadratic Gaussian (LQG) Control (Completed)
+Integrated the optimal LQR controller with a Kalman Filter to build a complete LQG autonomous flight controller. The system successfully estimates the true state from heavily corrupted ultrasonic sensor data and computes the optimal thrust to stabilize the drone.
+* **Source:** `src/day12_lqg.py` (or the name of your final LQG script)
+* **Results:** Demonstrated the Separation Principle by successfully driving the system from a 10m initial state to 0m while filtering out severe Gaussian measurement noise.
+* **Plot:** [View LQG Autonomous Landing](https://github.com/satvikvyas/controls-and-robotics-foundations/blob/main/results/LQGpng.png)
+
 
 ## Usage
 
