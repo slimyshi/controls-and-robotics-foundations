@@ -17,12 +17,10 @@ B= np.array(
      [1/m]]
 )
 
-q = np.array([
-    [10,0],#position error weightage
-    [0, 1]#velocity error weightage
-])
+# q penalize [X error, Y error, X velocity, Y velocity]
+q = np.diag([10, 10, 1, 1])
 
-r = np.array([[0.1]]) #to discourage motor usage to save battery (not much becuase small value)
+r = np.array([[0.1, 0.1]]) #to discourage motor usage to save battery (not much becuase small value)
 
 
 
